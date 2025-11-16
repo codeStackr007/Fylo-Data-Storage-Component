@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fylo Data Storage. A Frontend mentor challenge built HTML5 CSS3 and BEM"
+    />
+    <meta
+      name="keywords"
+      content="CSS3, Responsive Design, Frontend Mentor, HTML5, BEM, Mobile First"
+    />
+
+    <meta name="author" content="John Prosper" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Font | Raleway (400, 700) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="fylo-card">
+        <!-- Top card: Logo and action buttons -->
+        <section class="fylo-card__header">
+          <div class="header__logo">
+            <img src="images/logo.svg" alt="Fylo logo" class="logo__image" />
+          </div>
+          <div class="header__actions">
+            <button class="action-btn">
+              <img
+                src="images/icon-document.svg"
+                alt="Document"
+                class="action-btn__icon document-icon"
+              />
+            </button>
+            <button class="action-btn">
+              <img
+                src="images/icon-folder.svg"
+                alt="Folder"
+                class="action-btn__icon"
+              />
+            </button>
+            <button class="action-btn">
+              <img
+                src="images/icon-upload.svg"
+                alt="Upload"
+                class="action-btn__icon"
+              />
+            </button>
+          </div>
+        </section>
+
+        <!-- Bottom card: Storage information -->
+        <section class="fylo-card__storage">
+          <p class="storage__text">
+            You've used <strong class="storage__used">815 GB</strong> of your
+            storage
+          </p>
+
+          <!-- Progress bar -->
+          <div class="storage__progress">
+            <div class="progress__bar">
+              <div class="progress__fill"></div>
+              <div class="progress__indicator"></div>
+            </div>
+          </div>
+
+          <!-- Storage labels (0 GB and 1000 GB) -->
+          <div class="storage__labels">
+            <span class="label label--min">0 GB</span>
+            <span class="label label--max">1000 GB</span>
+          </div>
+
+          <!-- Remaining storage bubble -->
+          <div class="storage__remaining">
+            <span class="remaining__amount">185</span>
+            <span class="remaining__label">GB LEFT</span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/codeStackr007"
+        >John Prosper</a
+      >.
+    </footer>
+  </body>
+</html>
